@@ -1,6 +1,9 @@
 package Model;
 
-public class Tartarugas extends Animal {
+import Interface.IAndar;
+import Interface.INadar;
+
+public class Tartarugas extends Animal implements IAndar, INadar {
     boolean nada;
     boolean respiraDebaixoDagua;
 
@@ -79,4 +82,13 @@ public class Tartarugas extends Animal {
     }
 
 
+    @Override
+    public void andar() {
+        System.out.println("A tartaruga comecou a andar");
+    }
+
+    @Override
+    public void nadar() {
+        System.out.println("e logo depois comecou a nadar");
+    }
 }

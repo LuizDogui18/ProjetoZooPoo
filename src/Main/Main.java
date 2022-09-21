@@ -18,6 +18,7 @@ public class Main{
                 "Aves",
                 true,
                 true);
+        araras1.voar();
 
         Araras pinguim = new Araras(
                 true,
@@ -45,6 +46,7 @@ public class Main{
                 false,
                 false
         );
+        leao.rugir();
         Tartarugas crocodilo = new Tartarugas(
                 true,
                 true,
@@ -63,6 +65,7 @@ public class Main{
                 false,
                 false
         );
+
         Tartarugas cagado = new Tartarugas(
                 true,
                 true,
@@ -72,6 +75,8 @@ public class Main{
                 false,
                 false
         );
+        cagado.andar();
+        cagado.nadar();
         ambiente.setListaDeAnimais(0,araras1);
         ambiente.setListaDeAnimais(1, pinguim);
         ambiente.setListaDeAnimais(2, tigre);

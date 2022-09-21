@@ -1,6 +1,8 @@
 package Model;
 
-public class Araras extends Animal {
+import Interface.IVoar;
+
+public class Araras extends Animal implements IVoar {
     boolean naoVoa;
 
 
@@ -70,5 +72,10 @@ public class Araras extends Animal {
         return "\nAves: " +
                 "\nNaoVoa: " + naoVoa +
                 super.toString();
+    }
+
+    @Override
+    public void voar() {
+        System.out.println("Os passaros comecaram a voar ");
     }
 }

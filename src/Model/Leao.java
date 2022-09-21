@@ -1,7 +1,9 @@
 package Model;
 
 
-public class Leao extends Animal {
+import Interface.IRugir;
+
+public class Leao extends Animal implements IRugir {
 
     String genero;
     boolean temRabo;
@@ -81,4 +83,8 @@ public class Leao extends Animal {
 
     }
 
+    @Override
+    public void rugir() {
+        System.out.println("O Leao Rugiu");
+    }
 }
